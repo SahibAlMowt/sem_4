@@ -96,8 +96,14 @@ class JSON_Node
 	
 	void setFloat(float fl)
 	{
-		this -> *value.fValue = fl;
+		value.fValue = fl;
 		type = TYPE::NUMBER;
+	}
+
+	void setBool(bool bl)
+	{
+		value.bValue = bl;
+		type = TYPE::BOOLEAN;
 	}
 	
 };
