@@ -25,6 +25,10 @@ class JSON_Node
 	}value;
 	
 	TYPE type;
+
+//---------------------------------
+
+public:
 	
 	auto returnObject()
 	{

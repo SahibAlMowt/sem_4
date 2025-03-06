@@ -75,7 +75,7 @@ std::shared_ptr<JSON_Node> JSONParser::parseList()
 {
 	std::cout << "parse list\n";
 	
-	std::shared_ptr<JSON_Node> node = std::make_shared<JSON_Node>;
+	std::shared_ptr<JSON_Node> node = std::make_shared<JSON_Node>();
 	
 	JSONList *list = new JSONList();
 	
@@ -130,7 +130,7 @@ std::shared_ptr<JSON_Node> JSONParser::parseList()
 	return node;
 }
 
-std::shared_ptr<JSON_Node> parsedObject()
+std::shared_ptr<JSON_Node> JSONParser::parseObject()
 {
 	std::cout << "parse object\n";
 
@@ -145,7 +145,7 @@ std::shared_ptr<JSON_Node> parsedObject()
 		if(tokenizer.hasMoreTokens())
 		{
 			Token nextToken = tokenizer.getToken();
-			std::string key = nextToken value;
+			std::string key = nextToken.value;
 
 			std::cout << key << "\n";
 			tokenizer.getToken();
@@ -196,7 +196,7 @@ std::shared_ptr<JSON_Node> parsedObject()
 	return node;
 }
 
-std::shared_ptr<JSON_Node> parseString()
+std::shared_ptr<JSON_Node> JSONParser::parseString()
 {
 	std::cout << "parse string\n";
 
@@ -211,7 +211,7 @@ std::shared_ptr<JSON_Node> parseString()
 	return node;
 }
 
-std::shared_ptr<JSON_Node> parseNumber()
+std::shared_ptr<JSON_Node> JSONParser::parseNumber()
 {
 	std::cout << "parse number\n";
 
@@ -219,11 +219,11 @@ std::shared_ptr<JSON_Node> parseNumber()
 
 	Token token = tokenizer.getToken();
 
-	std::string Value = nextToken.value;
+	std::string Value = token.value; //std::string Value = nextToken.value;
 
-	std::cout << value << "\n";
+	std::cout << Value << "\n";
 
-	float fValue = std::stof(value);
+	float fValue = std::stof(Value);
 
 	node -> setFloat(fValue);
 
