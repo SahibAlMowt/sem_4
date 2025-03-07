@@ -1,8 +1,10 @@
+#ifndef JSON
+#define JSON
+
 #include <iostream>
 #include <map>
 #include <memory>
 #include <vector>
-
 
 class JSON_Node;
 
@@ -180,3 +182,4 @@ public:
 	}
 };
 
+#endif //JSON

@@ -29,7 +29,7 @@ void Tokenizer::rollBackToken()
     file.seekg(prevPos);
 }
 
-auto Tokenizer::getToken()
+Token Tokenizer::getToken()
 {
     char c;
 
@@ -131,7 +131,7 @@ auto Tokenizer::getToken()
         token.type = TOKEN::COMMA;
     }
 
-    return c;
+    return token;
 }
 
 Tokenizer::Tokenizer(std::string fileName)
@@ -144,7 +144,7 @@ Tokenizer::Tokenizer(std::string fileName)
     }
 }
 
-auto Tokenizer::hasMoreTokens()
+bool Tokenizer::hasMoreTokens()
 {
     return !file.eof();
 }
@@ -174,4 +174,6 @@ std::string Token::toStringStr()
         case TOKEN::COMMA:
             return "Comma";
     }
+
+    return "ok";
 }

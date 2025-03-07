@@ -12,7 +12,7 @@ void JSONParser::parse()
         try
         {
             token = tokenizer.getToken();
-            std::cout << token.toString() << "\n";
+            std::cout << token.toStringStr() << "\n";
 
             std::shared_ptr<JSON_Node> root;
 
@@ -117,7 +117,7 @@ std::shared_ptr<JSON_Node> JSONParser::parseList()
 					break;
 			}
 			
-			list -> push_back(node);
+			list -> push_back(node); //push _ back !
 			nextToken = tokenizer.getToken();
 			
 			if(nextToken.type == TOKEN::ARRAY_CLOSE)
@@ -242,7 +242,7 @@ std::shared_ptr<JSON_Node> JSONParser::parseBoolean()
 
 	Token nextToken = tokenizer.getToken();
 
-	node -> setBool(nextToken.value == "True" ? true : false)
+	node -> setBool(nextToken.value == "True" ? true : false);
 	
 	return node;
 }
