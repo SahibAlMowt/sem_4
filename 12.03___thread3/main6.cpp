@@ -6,7 +6,7 @@
 
 int main()
 {
-    std::vector<int> vec(0);
+    std::vector<int> vec(1'000'000);
     std::srand(std::time(nullptr));
     for(size_t i = 0; i < 1'000'000; i++)
     {
