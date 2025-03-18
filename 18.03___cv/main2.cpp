@@ -12,14 +12,15 @@ int main()
         return -1;
     }
 
-    cv::Mat resized;
+    int x = 100;
+    int y = 50;
 
-    int new_width = 1600;
-    int new_height = 900;
+    int width = 200;
+    int height = 100;
 
-    cv::resize(img, resized, cv::Size(new_width, new_height));
+    cv::Mat cropped = img(cv::Rect(x, y, width, height));
 
-    cv::imshow("King of Angmar", resized);
+    cv::imshow("King of Angmar", cropped);
 
     cv::waitKey(0);
 

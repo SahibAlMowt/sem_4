@@ -12,14 +12,17 @@ int main()
         return -1;
     }
 
-    cv::Mat resized;
+    double angle = 180.0;
 
-    int new_width = 1600;
-    int new_height = 900;
+    cv::Point2f center(img.cols / 2.0, img.rows / 2.0);
 
-    cv::resize(img, resized, cv::Size(new_width, new_height));
+    cv::Mat rotation_matrix = cv::getRotationMatrix2D(center, angle, 1.0);
 
-    cv::imshow("King of Angmar", resized);
+    cv::Mat rotated;
+
+    cv::warpAffine(img, rotated, rotation_matrix, img.size());
+
+    cv::imshow("King of Angmar", rotated);
 
     cv::waitKey(0);
 

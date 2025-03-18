@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD 20)
 
 find_package(OpenCV REQUIRED)
 
-add_executable(main1 main1.cpp)
+add_executable(main3 main3.cpp)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-target_link_libraries(main1 ${OpenCV_LIBS})
+target_link_libraries(main3 ${OpenCV_LIBS})
