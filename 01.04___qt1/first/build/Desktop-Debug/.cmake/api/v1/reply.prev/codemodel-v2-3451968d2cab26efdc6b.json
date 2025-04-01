@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-2f650ca7037dfc6a3d63.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "first",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "first::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-first-Debug-e2fae2149c765cf98af1.json",
+					"name" : "first",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "first_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-first_autogen-Debug-26616066fa4413587804.json",
+					"name" : "first_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "first_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-first_autogen_timestamp_deps-Debug-0b7bb82f2ce651cddee6.json",
+					"name" : "first_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/Desktop-Debug",
+		"source" : "/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
