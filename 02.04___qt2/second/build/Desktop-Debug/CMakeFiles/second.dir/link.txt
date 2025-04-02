@@ -1,0 +1,1 @@
+/usr/bin/g++ -DQT_QML_DEBUG -g CMakeFiles/second.dir/second_autogen/mocs_compilation.cpp.o CMakeFiles/second.dir/main8.cpp.o -o second  /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13 
