@@ -1,4 +1,5 @@
 #include <QTextStream>
+#include <QString>
 
 int main()
 {

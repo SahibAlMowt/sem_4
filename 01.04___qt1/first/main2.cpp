@@ -1,5 +1,5 @@
 #include <QTextStream>
-
+#include <QString>
 
 int main()
 {
@@ -9,12 +9,12 @@ int main()
     a.append(" MSU");
     a.prepend("I ");
 
-    out << a << endl;
+    out << a << Qt::endl;
 
-    out << "The string has " << a.count() << " symboles" << endl;
+    out << "The string has " << a.count() << " symboles" << Qt::endl;
 
-    out << a.toUpper() << endl;
-    out << a.toLower() << endl;
+    out << a.toUpper() << Qt::endl;
+    out << a.toLower() << Qt::endl;
 
     return 0;
 }

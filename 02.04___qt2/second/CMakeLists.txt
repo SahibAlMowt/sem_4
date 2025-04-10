@@ -13,7 +13,7 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(second
-  main8.cpp
+  main1.cpp
 
 )
 target_link_libraries(second Qt${QT_VERSION_MAJOR}::Core)

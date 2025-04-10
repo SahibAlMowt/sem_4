@@ -1,9 +1,0 @@
-/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/CMakeFiles/first.dir
-/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/CMakeFiles/edit_cache.dir
-/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/CMakeFiles/rebuild_cache.dir
-/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/CMakeFiles/list_install_components.dir
-/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/CMakeFiles/install.dir
-/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/CMakeFiles/install/local.dir
-/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/CMakeFiles/install/strip.dir
-/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/CMakeFiles/first_autogen_timestamp_deps.dir
-/home/stud-24/Desktop/Sahib Shukuru/projects_2/01.04___qt1/first/build/CMakeFiles/first_autogen.dir
