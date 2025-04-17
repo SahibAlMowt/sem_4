@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     AnotherMenu window;
     window.resize(250, 150);
 
-    window.setWindowTitle("---");
+    window.setWindowTitle("main7");
 
     window.show();
 
